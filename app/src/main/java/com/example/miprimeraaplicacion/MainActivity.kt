@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val btnLogin:Button = findViewById(R.id.btn_login)
         val txMessage:TextView = findViewById(R.id.tx_message)
 
-        var defUsername = "uAdmin"
+        var defUsername = "Fefo"
         var defPasswd = "admin123"
 
         /**
