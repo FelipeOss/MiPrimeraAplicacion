@@ -27,7 +27,7 @@ class MainActivity3 : AppCompatActivity() {
             var numeroUno:Int = edopUno.text.toString().toIntOrNull() ?: 0
             var numeroDos:Int = edopDos.text.toString().toIntOrNull() ?: 0
 
-            txResultado.text = OpMatematicas.dividirValores(numeroUno,numeroDos)
+            txResultado.text = OpMatematicas.sumar(numeroUno,numeroDos).toString()
         }
 
 
