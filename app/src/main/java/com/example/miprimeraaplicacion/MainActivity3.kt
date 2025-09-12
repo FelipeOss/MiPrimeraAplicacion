@@ -29,6 +29,13 @@ class MainActivity3 : AppCompatActivity() {
 
             txResultado.text = OpMatematicas.dividirValores(numeroUno,numeroDos)
         }
+
+
+
+
+
+
+
         backButton.setOnClickListener {
             val  newWindow = Intent(this, MainActivity2::class.java)
             startActivity(newWindow)
