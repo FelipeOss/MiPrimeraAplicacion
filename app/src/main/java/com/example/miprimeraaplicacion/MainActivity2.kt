@@ -20,6 +20,7 @@ class MainActivity2 : AppCompatActivity() {
         val getUsernameS = intent.getStringExtra("par_usern")
         val btnMenu1: Button = findViewById(R.id.btn_menu1)
         val btnSpinner: Button = findViewById(R.id.btn_spinner)
+        val btnCalculadora: Button = findViewById(R.id.btn_calculadora)
         txUser.text = getUsernameS.toString()
 
 
@@ -33,10 +34,14 @@ class MainActivity2 : AppCompatActivity() {
             startActivity(newWindow)
         }
         btnSpinner.setOnClickListener {
-            val  newWindow = Intent(this, MainActivity5::class.java)
+            val  newWindow = Intent(this, SpinnerRegionComuna::class.java)
             startActivity(newWindow)
         }
 
+        btnCalculadora.setOnClickListener {
+            val  newWindow = Intent(this, MainActivity5::class.java)
+            startActivity(newWindow)
+        }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
