@@ -19,16 +19,21 @@ class MainActivity2 : AppCompatActivity() {
         val btnCalculator: Button = findViewById(R.id.btn_calculator)
         val getUsernameS = intent.getStringExtra("par_usern")
         val btnMenu1: Button = findViewById(R.id.btn_menu1)
+        val btnSpinner: Button = findViewById(R.id.btn_spinner)
         txUser.text = getUsernameS.toString()
 
 
 
         btnCalculator.setOnClickListener {
-                val  newWindow = Intent(this, MainActivity3::class.java)
-                startActivity(newWindow)
+            val  newWindow = Intent(this, MainActivity3::class.java)
+            startActivity(newWindow)
             }
         btnMenu1.setOnClickListener {
             val  newWindow = Intent(this, MainActivity4::class.java)
+            startActivity(newWindow)
+        }
+        btnSpinner.setOnClickListener {
+            val  newWindow = Intent(this, MainActivity5::class.java)
             startActivity(newWindow)
         }
 
